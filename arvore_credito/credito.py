@@ -6,9 +6,9 @@ from sklearn import tree
 from sklearn.metrics import accuracy_score,classification_report
 from yellowbrick.classifier import ConfusionMatrix
 
-arquivo= 'C:/Users/edubo/Desktop/I.A/pre-processamento/credit.pkl'
-destino='C:/Users/edubo/Desktop/I.A/Arvore_de_decisao/arvore_credito'
-shutil.copy(arquivo,destino)
+# arquivo= 'C:/Users/edubo/Desktop/I.A/pre-processamento/credit.pkl'
+# destino='C:/Users/edubo/Desktop/I.A/Arvore_de_decisao/arvore_credito'
+# shutil.copy(arquivo,destino)
 
 with open('credit.pkl', 'rb') as f:
     X_treinamento,y_treinamento,X_teste,y_teste=pickle.load(f)
